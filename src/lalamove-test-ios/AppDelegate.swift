@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
-	var _navigationController: UINavigationController?
+	private var _navigationController: UINavigationController?
 	var navigationController: UINavigationController! {
 
 		get {
@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 				_navigationController = UINavigationController()
 			}
 
-			 return _navigationController
+			return _navigationController
 		}
 	}
 
