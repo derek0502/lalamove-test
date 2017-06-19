@@ -13,21 +13,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	// MARK: - Variables
 
-	var window: UIWindow?
+	var window: UIWindow? = {
 
-	private var _navigationController: UINavigationController?
-	var navigationController: UINavigationController! {
+		var tempWindow = UIWindow.init(frame: UIScreen.main.bounds)
+		tempWindow .makeKeyAndVisible()
 
-		get {
+		return tempWindow
+	} ()
 
-			if (_navigationController == nil) {
+	var navigationController: UINavigationController! = {
 
-				_navigationController = UINavigationController()
-			}
+		var tempNVC = UINavigationController()
 
-			return _navigationController
-		}
-	}
+		return tempNVC
+	} ()
 
 	// MARK: - <UIApplicationDelegate>
 
@@ -56,9 +55,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	// MARK: - Helpers
 
 	func setupLandingScreen() {
-
-		self.window = UIWindow.init(frame: UIScreen.main.bounds)
-		self.window?.makeKeyAndVisible()
 
 		self.window?.rootViewController = self.navigationController
 
