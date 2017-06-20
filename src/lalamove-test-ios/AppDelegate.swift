@@ -8,8 +8,13 @@
 
 import UIKit
 
+// Frameworks
+import StakkKit
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+
+	let kDatabaseStoreName = "lalamove-test"
 
 	// MARK: - Variables
 
@@ -31,6 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	// MARK: - <UIApplicationDelegate>
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
+		self.setupStakkKit()
 
 		self.setupLandingScreen()
 
@@ -54,11 +61,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	// MARK: - Helpers
 
+	func setupStakkKit() {
+
+		StakkKit.setupStakkKit(withLoggingLevel: SFLogLevel.all, databaseStoreName: kDatabaseStoreName)
+	}
+
 	func setupLandingScreen() {
 
 		self.window?.rootViewController = self.navigationController
 
-		self.navigationController.viewControllers = [ ViewController() ]
+		self.navigationController.viewControllers = [ DeliveyListViewController() ]
 	}
 }
 

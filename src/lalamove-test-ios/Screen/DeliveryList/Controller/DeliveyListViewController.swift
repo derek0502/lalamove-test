@@ -1,28 +1,25 @@
 //
-//  ViewController.swift
+//  DeliveyListViewController.swift
 //  lalamove-test-ios
 //
-//  Created by Derek Cheung on 19/6/2017.
+//  Created by Derek Cheung on 20/6/2017.
 //  Copyright © 2017 Derek Cheung. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class DeliveyListViewController: UIViewController {
 
 	// MARK: - View lifecycle
 
 	override func loadView() {
 
-		super.loadView()
-
 		self.view = UIView()
 		self.view.backgroundColor = UIColor.blue
 	}
 
-	override func viewDidLoad() {
+    override func viewDidLoad() {
 
-		super.viewDidLoad()
-	}
+        super.viewDidLoad()
+    }
 }
-

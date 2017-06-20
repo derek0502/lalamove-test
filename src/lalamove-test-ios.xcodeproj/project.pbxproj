@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2D0F6FD01EF7CA3F00C05661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F6FCF1EF7CA3F00C05661 /* AppDelegate.swift */; };
-		2D0F6FD21EF7CA3F00C05661 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F6FD11EF7CA3F00C05661 /* ViewController.swift */; };
-		2D0F6FD71EF7CA3F00C05661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F6FD61EF7CA3F00C05661 /* Assets.xcassets */; };
-		2D0F6FDA1EF7CA3F00C05661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F6FD81EF7CA3F00C05661 /* LaunchScreen.storyboard */; };
+		2D0F6FE91EF8F1B600C05661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F6FE51EF8F1B600C05661 /* Assets.xcassets */; };
+		2D0F6FEC1EF8F20100C05661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F6FEB1EF8F20100C05661 /* LaunchScreen.storyboard */; };
+		2D0F6FF21EF8F29600C05661 /* lalamove-test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F6FF01EF8F29600C05661 /* lalamove-test.xcdatamodeld */; };
+		2D0F6FF71EF8F47F00C05661 /* DeliveyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F6FF61EF8F47F00C05661 /* DeliveyListViewController.swift */; };
 		89B41175C47487260872FF30 /* Pods_lalamove_test_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C345DD510F88D1656BB99C5 /* Pods_lalamove_test_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -18,10 +19,11 @@
 		0C345DD510F88D1656BB99C5 /* Pods_lalamove_test_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lalamove_test_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0F6FCC1EF7CA3F00C05661 /* lalamove-test-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lalamove-test-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0F6FCF1EF7CA3F00C05661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2D0F6FD11EF7CA3F00C05661 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2D0F6FD61EF7CA3F00C05661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2D0F6FD91EF7CA3F00C05661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2D0F6FDB1EF7CA3F00C05661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D0F6FE51EF8F1B600C05661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D0F6FE61EF8F1B600C05661 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D0F6FEB1EF8F20100C05661 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D0F6FF11EF8F29600C05661 /* StakkKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StakkKit.xcdatamodel; sourceTree = "<group>"; };
+		2D0F6FF61EF8F47F00C05661 /* DeliveyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveyListViewController.swift; sourceTree = "<group>"; };
 		A88DFCD22A08BC19BD561E59 /* Pods-lalamove-test-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lalamove-test-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lalamove-test-ios/Pods-lalamove-test-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		D4E7C569E57C48EE8A9F9D46 /* Pods-lalamove-test-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lalamove-test-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-lalamove-test-ios/Pods-lalamove-test-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,12 +71,61 @@
 			isa = PBXGroup;
 			children = (
 				2D0F6FCF1EF7CA3F00C05661 /* AppDelegate.swift */,
-				2D0F6FD11EF7CA3F00C05661 /* ViewController.swift */,
-				2D0F6FD61EF7CA3F00C05661 /* Assets.xcassets */,
-				2D0F6FD81EF7CA3F00C05661 /* LaunchScreen.storyboard */,
-				2D0F6FDB1EF7CA3F00C05661 /* Info.plist */,
+				2D0F6FE31EF8F1B600C05661 /* Screen */,
+				2D0F6FE71EF8F1B600C05661 /* Util */,
+				2D0F6FE41EF8F1B600C05661 /* SupportingFiles */,
 			);
 			path = "lalamove-test-ios";
+			sourceTree = "<group>";
+		};
+		2D0F6FE31EF8F1B600C05661 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				2D0F6FF41EF8F44800C05661 /* DeliveryList */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		2D0F6FE41EF8F1B600C05661 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2D0F6FE51EF8F1B600C05661 /* Assets.xcassets */,
+				2D0F6FE61EF8F1B600C05661 /* Info.plist */,
+				2D0F6FEB1EF8F20100C05661 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2D0F6FE71EF8F1B600C05661 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2D0F6FE81EF8F1B600C05661 /* Database */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		2D0F6FE81EF8F1B600C05661 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				2D0F6FF01EF8F29600C05661 /* lalamove-test.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		2D0F6FF41EF8F44800C05661 /* DeliveryList */ = {
+			isa = PBXGroup;
+			children = (
+				2D0F6FF51EF8F44800C05661 /* Controller */,
+			);
+			path = DeliveryList;
+			sourceTree = "<group>";
+		};
+		2D0F6FF51EF8F44800C05661 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D0F6FF61EF8F47F00C05661 /* DeliveyListViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		AB1D853760065C2A4BD7B404 /* Frameworks */ = {
@@ -130,8 +181,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
-				Base,
 			);
 			mainGroup = 2D0F6FC31EF7CA3F00C05661;
 			productRefGroup = 2D0F6FCD1EF7CA3F00C05661 /* Products */;
@@ -148,8 +197,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D0F6FDA1EF7CA3F00C05661 /* LaunchScreen.storyboard in Resources */,
-				2D0F6FD71EF7CA3F00C05661 /* Assets.xcassets in Resources */,
+				2D0F6FEC1EF8F20100C05661 /* LaunchScreen.storyboard in Resources */,
+				2D0F6FE91EF8F1B600C05661 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,23 +257,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D0F6FD21EF7CA3F00C05661 /* ViewController.swift in Sources */,
+				2D0F6FF71EF8F47F00C05661 /* DeliveyListViewController.swift in Sources */,
 				2D0F6FD01EF7CA3F00C05661 /* AppDelegate.swift in Sources */,
+				2D0F6FF21EF8F29600C05661 /* lalamove-test.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2D0F6FD81EF7CA3F00C05661 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D0F6FD91EF7CA3F00C05661 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2D0F6FDC1EF7CA3F00C05661 /* Debug */ = {
@@ -326,7 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 34M3SE3B5V;
-				INFOPLIST_FILE = "lalamove-test-ios/Info.plist";
+				INFOPLIST_FILE = "lalamove-test-ios/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nanodiff.lalamove-test-ios";
@@ -341,7 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 34M3SE3B5V;
-				INFOPLIST_FILE = "lalamove-test-ios/Info.plist";
+				INFOPLIST_FILE = "lalamove-test-ios/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nanodiff.lalamove-test-ios";
@@ -372,6 +411,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2D0F6FF01EF8F29600C05661 /* lalamove-test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2D0F6FF11EF8F29600C05661 /* StakkKit.xcdatamodel */,
+			);
+			currentVersion = 2D0F6FF11EF8F29600C05661 /* StakkKit.xcdatamodel */;
+			path = "lalamove-test.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2D0F6FC41EF7CA3F00C05661 /* Project object */;
 }
