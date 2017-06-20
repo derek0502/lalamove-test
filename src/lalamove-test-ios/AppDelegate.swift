@@ -16,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	// MARK: - Constants
 
-	let kDatabaseStoreName = "lalamove-test"
+	struct Constants {
+
+		static let databaseStoreName = "lalamove-test"
+	}
 
 	// MARK: - Variables
 
@@ -65,7 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func setupStakkKit() {
 
-		StakkKit.setupStakkKit(withLoggingLevel: SFLogLevel.all, databaseStoreName: kDatabaseStoreName)
+		StakkKit.setupStakkKit(withLoggingLevel: SFLogLevel.all, databaseStoreName: Constants.databaseStoreName)
 	}
 
 	func setupLandingScreen() {

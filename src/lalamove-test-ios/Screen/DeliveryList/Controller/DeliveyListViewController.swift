@@ -15,7 +15,10 @@ class DeliveyListViewController: UIViewController, UITableViewDelegate, UITableV
 
 	// MARK: - Constants
 
-	let kTitle = "Things to Deliver"
+	struct Constants {
+
+		static let title = "Things to Deliver"
+	}
 
 	// MARK: - Variables
 
@@ -34,14 +37,14 @@ class DeliveyListViewController: UIViewController, UITableViewDelegate, UITableV
 
 		self.myView?.tableView.delegate = self
 		self.myView?.tableView.dataSource = self
-		self.myView?.tableView.register(SFBaseTableViewCell.self, forCellReuseIdentifier: SFBaseTableViewCell.reuseIdentifier())
+		self.myView?.tableView.register(DeliveryListTableViewCell.self, forCellReuseIdentifier: DeliveryListTableViewCell.reuseIdentifier())
 	}
 
     override func viewDidLoad() {
 
         super.viewDidLoad()
 
-		self.title = kTitle
+		self.title = Constants.title
 
 		_ = NetworkManager.sharedInstance().getDeliveryList(ignoreCache: true,
 		                                                    success: { (response) in
@@ -57,8 +60,9 @@ class DeliveyListViewController: UIViewController, UITableViewDelegate, UITableV
 
 	public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-		let cell:SFBaseTableViewCell! = tableView.dequeueReusableCell(withIdentifier: SFBaseTableViewCell.reuseIdentifier()) as! SFBaseTableViewCell
-		cell.bottomSeparator.isHidden = false
+		let cell:DeliveryListTableViewCell! = tableView.dequeueReusableCell(withIdentifier: DeliveryListTableViewCell.reuseIdentifier()) as! DeliveryListTableViewCell
+
+		cell.model = self.dataSource?[indexPath.row]
 
 		return cell!
 	}
@@ -72,6 +76,6 @@ class DeliveyListViewController: UIViewController, UITableViewDelegate, UITableV
 
 	public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 
-		return 50
+		return DeliveryListTableViewCell.height()
 	}
 }

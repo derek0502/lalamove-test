@@ -14,14 +14,17 @@ class NetworkManager: SFNetworkManager {
 
 	// MARK: - Constants
 
-	let kAPIDomain = "http://localhost:8080/"
-	let kAPIGetDeliveryList = "deliveries"
+	struct Constants {
+
+		static let APIDomain = "http://localhost:8080/"
+		static let APIGetDeliveryList = "deliveries"
+	}
 
 	// MARK: - Public
 
 	public func getDeliveryList (ignoreCache: Bool, success: GetDeliveryListSuccessBlock?, failure: SFRequestFailureBlock?) -> URLSessionDataTask? {
 
-		return self.request(withURL: kAPIDomain + kAPIGetDeliveryList,
+		return self.request(withURL: Constants.APIDomain + Constants.APIGetDeliveryList,
 		                    method: SFRequestMethodGET,
 		                    parameters: nil,
 		                    ignoreCache: ignoreCache,
