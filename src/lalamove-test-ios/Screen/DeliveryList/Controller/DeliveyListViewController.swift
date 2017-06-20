@@ -37,16 +37,10 @@ class DeliveyListViewController: UIViewController {
 
 		self.title = kTitle
 
-		SFNetworkManager.sharedInstance().request(withURL: "http://localhost:8080/deliveries",
-		                                          method: SFRequestMethodGET,
-		                                          parameters: nil,
-		                                          ignoreCache: false,
-		                                          cachePeriodInSecs: 6000,
-		                                          success: { (responseDict) in
+		_ = NetworkManager.sharedInstance().getDeliveryList(
+			success: { (response) in
 
-													let response:DeliveryList? = try? DeliveryList.init(dictionary: responseDict)
-													print(response?.response?.first);
 		},
-		                                          failure: nil)
+			failure: nil)
 	}
 }
