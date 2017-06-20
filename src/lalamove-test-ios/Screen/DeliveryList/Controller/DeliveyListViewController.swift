@@ -13,24 +13,40 @@ import StakkKit
 
 class DeliveyListViewController: UIViewController {
 
+	// MARK: - Constants
+
+	let kTitle = "Things to Deliver"
+
+	// MARK: - Variables
+
+	var myView: DeliveryListView? {
+
+		return self.view as? DeliveryListView
+	}
+
 	// MARK: - View lifecycle
 
 	override func loadView() {
 
-		self.view = UIView()
-		self.view.backgroundColor = UIColor.blue
+		self.view = DeliveryListView()
 	}
 
     override func viewDidLoad() {
 
         super.viewDidLoad()
 
+		self.title = kTitle
+
 		SFNetworkManager.sharedInstance().request(withURL: "http://localhost:8080/deliveries",
 		                                          method: SFRequestMethodGET,
 		                                          parameters: nil,
 		                                          ignoreCache: false,
 		                                          cachePeriodInSecs: 6000,
-		                                          success: nil,
+		                                          success: { (responseDict) in
+
+													let response:DeliveryList? = try? DeliveryList.init(dictionary: responseDict)
+													print(response?.response?.first);
+		},
 		                                          failure: nil)
-    }
+	}
 }
