@@ -13,7 +13,7 @@
 		2D0F6FF21EF8F29600C05661 /* lalamove-test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F6FF01EF8F29600C05661 /* lalamove-test.xcdatamodeld */; };
 		2D0F6FF71EF8F47F00C05661 /* DeliveyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F6FF61EF8F47F00C05661 /* DeliveyListViewController.swift */; };
 		2D0F6FFE1EF903D200C05661 /* DeliveryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F6FFD1EF903D200C05661 /* DeliveryListView.swift */; };
-		2D0F70001EF90B4D00C05661 /* Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F6FFF1EF90B4D00C05661 /* Delivery.swift */; };
+		2D0F70001EF90B4D00C05661 /* DeliveryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F6FFF1EF90B4D00C05661 /* DeliveryItem.swift */; };
 		2D0F70021EF90D6600C05661 /* DeliveryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F70011EF90D6600C05661 /* DeliveryList.swift */; };
 		2D0F70041EF91AB200C05661 /* DeliveryLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F70031EF91AB200C05661 /* DeliveryLocation.swift */; };
 		2D0F70061EF923AF00C05661 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F70051EF923AF00C05661 /* NetworkManager.swift */; };
@@ -30,7 +30,7 @@
 		2D0F6FF11EF8F29600C05661 /* StakkKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StakkKit.xcdatamodel; sourceTree = "<group>"; };
 		2D0F6FF61EF8F47F00C05661 /* DeliveyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveyListViewController.swift; sourceTree = "<group>"; };
 		2D0F6FFD1EF903D200C05661 /* DeliveryListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryListView.swift; sourceTree = "<group>"; };
-		2D0F6FFF1EF90B4D00C05661 /* Delivery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delivery.swift; sourceTree = "<group>"; };
+		2D0F6FFF1EF90B4D00C05661 /* DeliveryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryItem.swift; sourceTree = "<group>"; };
 		2D0F70011EF90D6600C05661 /* DeliveryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryList.swift; sourceTree = "<group>"; };
 		2D0F70031EF91AB200C05661 /* DeliveryLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryLocation.swift; sourceTree = "<group>"; };
 		2D0F70051EF923AF00C05661 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 		2D0F6FFB1EF903AA00C05661 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2D0F6FFF1EF90B4D00C05661 /* Delivery.swift */,
+				2D0F6FFF1EF90B4D00C05661 /* DeliveryItem.swift */,
 				2D0F70011EF90D6600C05661 /* DeliveryList.swift */,
 				2D0F70031EF91AB200C05661 /* DeliveryLocation.swift */,
 			);
@@ -309,7 +309,7 @@
 				2D0F70061EF923AF00C05661 /* NetworkManager.swift in Sources */,
 				2D0F6FF21EF8F29600C05661 /* lalamove-test.xcdatamodeld in Sources */,
 				2D0F70041EF91AB200C05661 /* DeliveryLocation.swift in Sources */,
-				2D0F70001EF90B4D00C05661 /* Delivery.swift in Sources */,
+				2D0F70001EF90B4D00C05661 /* DeliveryItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

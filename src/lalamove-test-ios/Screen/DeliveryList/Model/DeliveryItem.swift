@@ -1,5 +1,5 @@
 //
-//  Delivery.swift
+//  DeliveryItem.swift
 //  lalamove-test-ios
 //
 //  Created by Derek Cheung on 20/6/2017.
@@ -8,7 +8,7 @@
 
 import StakkKit
 
-class Delivery: SFBaseModel {
+class DeliveryItem: SFBaseModel {
 
 	// MARK: - Variables
 
@@ -27,7 +27,7 @@ class Delivery: SFBaseModel {
 
 		switch propertyName {
 
-		case #keyPath(Delivery.location):
+		case #keyPath(DeliveryItem.location):
 			return DeliveryLocation.self
 
 		default:

@@ -19,12 +19,12 @@ class NetworkManager: SFNetworkManager {
 
 	// MARK: - Public
 
-	public func getDeliveryList (success: GetDeliveryListSuccessBlock?, failure: SFRequestFailureBlock?) -> URLSessionDataTask? {
+	public func getDeliveryList (ignoreCache: Bool, success: GetDeliveryListSuccessBlock?, failure: SFRequestFailureBlock?) -> URLSessionDataTask? {
 
 		return self.request(withURL: kAPIDomain + kAPIGetDeliveryList,
 		                    method: SFRequestMethodGET,
 		                    parameters: nil,
-		                    ignoreCache: false,
+		                    ignoreCache: ignoreCache,
 		                    cachePeriodInSecs: 6000,
 		                    success: { (responseDict) in
 
@@ -36,5 +36,5 @@ class NetworkManager: SFNetworkManager {
 		},
 		                    failure: failure)
 	}
-
+	
 }

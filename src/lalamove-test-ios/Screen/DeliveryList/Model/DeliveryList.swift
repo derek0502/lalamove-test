@@ -12,7 +12,7 @@ class DeliveryList: SFBaseModel {
 
 	// MARK: - Variables
 
-	var response: [Delivery]?
+	var response: [DeliveryItem]?
 
 	// MARK: - Override
 
@@ -21,7 +21,7 @@ class DeliveryList: SFBaseModel {
 		switch propertyName {
 
 		case #keyPath(DeliveryList.response):
-			return Delivery.self
+			return DeliveryItem.self
 
 		default:
 			return nil
