@@ -8,6 +8,9 @@
 
 import UIKit
 
+// Frameworks
+import StakkKit
+
 class DeliveyListViewController: UIViewController {
 
 	// MARK: - View lifecycle
@@ -21,5 +24,13 @@ class DeliveyListViewController: UIViewController {
     override func viewDidLoad() {
 
         super.viewDidLoad()
+
+		SFNetworkManager.sharedInstance().request(withURL: "http://localhost:8080/deliveries",
+		                                          method: SFRequestMethodGET,
+		                                          parameters: nil,
+		                                          ignoreCache: false,
+		                                          cachePeriodInSecs: 6000,
+		                                          success: nil,
+		                                          failure: nil)
     }
 }

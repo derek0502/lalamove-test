@@ -14,6 +14,8 @@ import StakkKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+	// MARK: - Constants
+
 	let kDatabaseStoreName = "lalamove-test"
 
 	// MARK: - Variables
