@@ -14,7 +14,7 @@ class DeliveryDetailViewController: UIViewController {
 
 	struct Constants {
 
-		static let title = "Deliver Details"
+		static let title: String = "Deliver Details"
 	}
 
 	// MARK: - Variables

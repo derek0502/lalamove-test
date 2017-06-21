@@ -10,7 +10,6 @@
 		2D0F6FD01EF7CA3F00C05661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F6FCF1EF7CA3F00C05661 /* AppDelegate.swift */; };
 		2D0F6FE91EF8F1B600C05661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F6FE51EF8F1B600C05661 /* Assets.xcassets */; };
 		2D0F6FEC1EF8F20100C05661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F6FEB1EF8F20100C05661 /* LaunchScreen.storyboard */; };
-		2D0F6FF21EF8F29600C05661 /* lalamove-test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F6FF01EF8F29600C05661 /* lalamove-test.xcdatamodeld */; };
 		2D0F6FF71EF8F47F00C05661 /* DeliveyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F6FF61EF8F47F00C05661 /* DeliveyListViewController.swift */; };
 		2D0F6FFE1EF903D200C05661 /* DeliveryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F6FFD1EF903D200C05661 /* DeliveryListView.swift */; };
 		2D0F70001EF90B4D00C05661 /* DeliveryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F6FFF1EF90B4D00C05661 /* DeliveryItem.swift */; };
@@ -20,6 +19,7 @@
 		2D0F70081EF9888100C05661 /* DeliveryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F70071EF9888100C05661 /* DeliveryListTableViewCell.swift */; };
 		2D0F700D1EF99FC500C05661 /* DeliveryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F700C1EF99FC500C05661 /* DeliveryDetailViewController.swift */; };
 		2D0F700F1EFA799100C05661 /* DeliveryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F700E1EFA799100C05661 /* DeliveryDetailView.swift */; };
+		2D0F70151EFAC6B400C05661 /* lalamove-test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F70131EFAC6B400C05661 /* lalamove-test.xcdatamodeld */; };
 		89B41175C47487260872FF30 /* Pods_lalamove_test_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C345DD510F88D1656BB99C5 /* Pods_lalamove_test_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,6 @@
 		2D0F6FE51EF8F1B600C05661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D0F6FE61EF8F1B600C05661 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D0F6FEB1EF8F20100C05661 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2D0F6FF11EF8F29600C05661 /* StakkKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StakkKit.xcdatamodel; sourceTree = "<group>"; };
 		2D0F6FF61EF8F47F00C05661 /* DeliveyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveyListViewController.swift; sourceTree = "<group>"; };
 		2D0F6FFD1EF903D200C05661 /* DeliveryListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryListView.swift; sourceTree = "<group>"; };
 		2D0F6FFF1EF90B4D00C05661 /* DeliveryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryItem.swift; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		2D0F70071EF9888100C05661 /* DeliveryListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryListTableViewCell.swift; sourceTree = "<group>"; };
 		2D0F700C1EF99FC500C05661 /* DeliveryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryDetailViewController.swift; sourceTree = "<group>"; };
 		2D0F700E1EFA799100C05661 /* DeliveryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryDetailView.swift; sourceTree = "<group>"; };
+		2D0F70141EFAC6B400C05661 /* StakkKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StakkKit.xcdatamodel; sourceTree = "<group>"; };
 		A88DFCD22A08BC19BD561E59 /* Pods-lalamove-test-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lalamove-test-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lalamove-test-ios/Pods-lalamove-test-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		D4E7C569E57C48EE8A9F9D46 /* Pods-lalamove-test-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lalamove-test-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-lalamove-test-ios/Pods-lalamove-test-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +125,7 @@
 		2D0F6FE81EF8F1B600C05661 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				2D0F6FF01EF8F29600C05661 /* lalamove-test.xcdatamodeld */,
+				2D0F70121EFAC6B400C05661 /* Model */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -206,6 +206,14 @@
 				2D0F700E1EFA799100C05661 /* DeliveryDetailView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2D0F70121EFAC6B400C05661 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D0F70131EFAC6B400C05661 /* lalamove-test.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		AB1D853760065C2A4BD7B404 /* Frameworks */ = {
@@ -339,13 +347,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D0F6FFE1EF903D200C05661 /* DeliveryListView.swift in Sources */,
+				2D0F70151EFAC6B400C05661 /* lalamove-test.xcdatamodeld in Sources */,
 				2D0F6FF71EF8F47F00C05661 /* DeliveyListViewController.swift in Sources */,
 				2D0F700F1EFA799100C05661 /* DeliveryDetailView.swift in Sources */,
 				2D0F70081EF9888100C05661 /* DeliveryListTableViewCell.swift in Sources */,
 				2D0F6FD01EF7CA3F00C05661 /* AppDelegate.swift in Sources */,
 				2D0F70021EF90D6600C05661 /* DeliveryList.swift in Sources */,
 				2D0F70061EF923AF00C05661 /* NetworkManager.swift in Sources */,
-				2D0F6FF21EF8F29600C05661 /* lalamove-test.xcdatamodeld in Sources */,
 				2D0F700D1EF99FC500C05661 /* DeliveryDetailViewController.swift in Sources */,
 				2D0F70041EF91AB200C05661 /* DeliveryLocation.swift in Sources */,
 				2D0F70001EF90B4D00C05661 /* DeliveryItem.swift in Sources */,
@@ -502,12 +510,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		2D0F6FF01EF8F29600C05661 /* lalamove-test.xcdatamodeld */ = {
+		2D0F70131EFAC6B400C05661 /* lalamove-test.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				2D0F6FF11EF8F29600C05661 /* StakkKit.xcdatamodel */,
+				2D0F70141EFAC6B400C05661 /* StakkKit.xcdatamodel */,
 			);
-			currentVersion = 2D0F6FF11EF8F29600C05661 /* StakkKit.xcdatamodel */;
+			currentVersion = 2D0F70141EFAC6B400C05661 /* StakkKit.xcdatamodel */;
 			path = "lalamove-test.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

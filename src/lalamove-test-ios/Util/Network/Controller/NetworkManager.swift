@@ -16,8 +16,12 @@ class NetworkManager: SFNetworkManager {
 
 	struct Constants {
 
-		static let APIDomain = "http://localhost:8080/"
-		static let APIGetDeliveryList = "deliveries"
+		static let APIDomain: String = "http://localhost:8080/"
+		static let APIGetDeliveryList: String = "deliveries"
+		static var APIGetDeliveryCachePeriodInSecs: CGFloat {
+
+			return 60 * 60 * 24
+		}
 	}
 
 	// MARK: - Public
@@ -28,7 +32,7 @@ class NetworkManager: SFNetworkManager {
 		                    method: SFRequestMethodGET,
 		                    parameters: nil,
 		                    ignoreCache: ignoreCache,
-		                    cachePeriodInSecs: 6000,
+		                    cachePeriodInSecs: Constants.APIGetDeliveryCachePeriodInSecs,
 		                    success: { (responseDict) in
 
 								if (success != nil) {

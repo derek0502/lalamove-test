@@ -17,7 +17,7 @@ class DeliveyListViewController: UIViewController, UITableViewDelegate, UITableV
 
 	struct Constants {
 
-		static let title = "Things to Deliver"
+		static let title: String = "Things to Deliver"
 	}
 
 	// MARK: - Variables
@@ -46,14 +46,40 @@ class DeliveyListViewController: UIViewController, UITableViewDelegate, UITableV
 
 		self.title = Constants.title
 
-		_ = NetworkManager.sharedInstance().getDeliveryList(ignoreCache: true,
+		self.fetchData(ignoreCache: false)
+		self.fetchData(ignoreCache: true)
+	}
+
+	// MARK: - Helpers
+
+	func fetchData(ignoreCache isIgnoreCache: Bool) {
+
+		_ = NetworkManager.sharedInstance().getDeliveryList(ignoreCache: isIgnoreCache,
 		                                                    success: { (response) in
 
-																self.dataSource = response?.response
-																self.myView?.tableView.reloadData()
-
+																self.updateDataSource(withResponse: response?.response, fromCache: !isIgnoreCache)
 		},
-		                                                    failure: nil)
+		                                                    failure: { (error, response) in
+
+																self.updateDataSource(withResponse: nil, fromCache: !isIgnoreCache)
+		})
+	}
+
+	func updateDataSource(withResponse response: [DeliveryItem]?, fromCache isFromCache: Bool) {
+
+		if (response != nil) {
+
+			if (isFromCache == true && self.dataSource == nil) {
+
+				self.dataSource = response
+
+			} else if (isFromCache == false) {
+
+				self.dataSource = response
+			}
+		}
+
+		self.myView?.tableView.reloadData()
 	}
 
 	// MARK: - <UITableViewDataSource>
