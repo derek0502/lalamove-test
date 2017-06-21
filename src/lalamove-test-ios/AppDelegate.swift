@@ -10,6 +10,7 @@ import UIKit
 
 // Frameworks
 import StakkKit
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	struct Constants {
 
 		static let databaseStoreName = "lalamove-test"
+		static let googleAPIKey = "AIzaSyAQv15OlqBSBAaXgrH2ZEvmrcI7fgYLb4E"
 	}
 
 	// MARK: - Variables
@@ -43,6 +45,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
 		self.setupStakkKit()
+
+		self.setupGoogleService()
 
 		self.setupLandingScreen()
 
@@ -69,6 +73,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func setupStakkKit() {
 
 		StakkKit.setupStakkKit(withLoggingLevel: SFLogLevel.all, databaseStoreName: Constants.databaseStoreName)
+	}
+
+	func setupGoogleService() {
+
+		GMSServices.provideAPIKey(Constants.googleAPIKey)
 	}
 
 	func setupLandingScreen() {

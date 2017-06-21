@@ -18,6 +18,8 @@
 		2D0F70041EF91AB200C05661 /* DeliveryLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F70031EF91AB200C05661 /* DeliveryLocation.swift */; };
 		2D0F70061EF923AF00C05661 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F70051EF923AF00C05661 /* NetworkManager.swift */; };
 		2D0F70081EF9888100C05661 /* DeliveryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F70071EF9888100C05661 /* DeliveryListTableViewCell.swift */; };
+		2D0F700D1EF99FC500C05661 /* DeliveryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F700C1EF99FC500C05661 /* DeliveryDetailViewController.swift */; };
+		2D0F700F1EFA799100C05661 /* DeliveryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F700E1EFA799100C05661 /* DeliveryDetailView.swift */; };
 		89B41175C47487260872FF30 /* Pods_lalamove_test_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C345DD510F88D1656BB99C5 /* Pods_lalamove_test_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		2D0F70031EF91AB200C05661 /* DeliveryLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryLocation.swift; sourceTree = "<group>"; };
 		2D0F70051EF923AF00C05661 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2D0F70071EF9888100C05661 /* DeliveryListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryListTableViewCell.swift; sourceTree = "<group>"; };
+		2D0F700C1EF99FC500C05661 /* DeliveryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryDetailViewController.swift; sourceTree = "<group>"; };
+		2D0F700E1EFA799100C05661 /* DeliveryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryDetailView.swift; sourceTree = "<group>"; };
 		A88DFCD22A08BC19BD561E59 /* Pods-lalamove-test-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lalamove-test-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lalamove-test-ios/Pods-lalamove-test-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		D4E7C569E57C48EE8A9F9D46 /* Pods-lalamove-test-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lalamove-test-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-lalamove-test-ios/Pods-lalamove-test-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +97,7 @@
 		2D0F6FE31EF8F1B600C05661 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				2D0F70091EF99F9500C05661 /* DeliveryDetail */,
 				2D0F6FF41EF8F44800C05661 /* DeliveryList */,
 			);
 			path = Screen;
@@ -178,6 +183,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		2D0F70091EF99F9500C05661 /* DeliveryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2D0F700A1EF99F9500C05661 /* Controller */,
+				2D0F700B1EF99F9500C05661 /* View */,
+			);
+			path = DeliveryDetail;
+			sourceTree = "<group>";
+		};
+		2D0F700A1EF99F9500C05661 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D0F700C1EF99FC500C05661 /* DeliveryDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2D0F700B1EF99F9500C05661 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D0F700E1EFA799100C05661 /* DeliveryDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		AB1D853760065C2A4BD7B404 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +260,9 @@
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 2D0F6FC31EF7CA3F00C05661;
 			productRefGroup = 2D0F6FCD1EF7CA3F00C05661 /* Products */;
 			projectDirPath = "";
@@ -307,11 +340,13 @@
 			files = (
 				2D0F6FFE1EF903D200C05661 /* DeliveryListView.swift in Sources */,
 				2D0F6FF71EF8F47F00C05661 /* DeliveyListViewController.swift in Sources */,
+				2D0F700F1EFA799100C05661 /* DeliveryDetailView.swift in Sources */,
 				2D0F70081EF9888100C05661 /* DeliveryListTableViewCell.swift in Sources */,
 				2D0F6FD01EF7CA3F00C05661 /* AppDelegate.swift in Sources */,
 				2D0F70021EF90D6600C05661 /* DeliveryList.swift in Sources */,
 				2D0F70061EF923AF00C05661 /* NetworkManager.swift in Sources */,
 				2D0F6FF21EF8F29600C05661 /* lalamove-test.xcdatamodeld in Sources */,
+				2D0F700D1EF99FC500C05661 /* DeliveryDetailViewController.swift in Sources */,
 				2D0F70041EF91AB200C05661 /* DeliveryLocation.swift in Sources */,
 				2D0F70001EF90B4D00C05661 /* DeliveryItem.swift in Sources */,
 			);

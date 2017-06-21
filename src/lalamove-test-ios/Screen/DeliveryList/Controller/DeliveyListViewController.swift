@@ -60,7 +60,7 @@ class DeliveyListViewController: UIViewController, UITableViewDelegate, UITableV
 
 	public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-		let cell:DeliveryListTableViewCell! = tableView.dequeueReusableCell(withIdentifier: DeliveryListTableViewCell.reuseIdentifier()) as! DeliveryListTableViewCell
+		let cell: DeliveryListTableViewCell! = tableView.dequeueReusableCell(withIdentifier: DeliveryListTableViewCell.reuseIdentifier()) as! DeliveryListTableViewCell
 
 		cell.model = self.dataSource?[indexPath.row]
 
@@ -77,5 +77,14 @@ class DeliveyListViewController: UIViewController, UITableViewDelegate, UITableV
 	public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 
 		return DeliveryListTableViewCell.height()
+	}
+
+	public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+		let model: DeliveryItem! = self.dataSource?[indexPath.row]
+
+		let vc: DeliveryDetailViewController = DeliveryDetailViewController(model: model)
+
+		self.navigationController?.pushViewController(vc, animated: true)
 	}
 }

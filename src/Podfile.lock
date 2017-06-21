@@ -22,6 +22,11 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (3.0.0):
     - CocoaLumberjack/Default
+  - GoogleMaps (2.3.1):
+    - GoogleMaps/Maps (= 2.3.1)
+  - GoogleMaps/Base (2.3.1)
+  - GoogleMaps/Maps (2.3.1):
+    - GoogleMaps/Base
   - JSONModel (1.5.1)
   - libextobjc/EXTScope (0.4.1):
     - libextobjc/RuntimeExtensions
@@ -43,11 +48,13 @@ PODS:
     - SDWebImage (~> 3.8.2)
 
 DEPENDENCIES:
+  - GoogleMaps (~> 2.3.1)
   - StakkKit (~> 1.4.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CocoaLumberjack: c823149bccc5519a9447aeb433be7b1212a7d6a5
+  GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
   JSONModel: fd2553dc9e6608a3f35bfc956a14be35395d3852
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
@@ -55,6 +62,6 @@ SPEC CHECKSUMS:
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   StakkKit: ad1fa768a218224f3d189caa00cdb4f057a6ec07
 
-PODFILE CHECKSUM: c7204717d8380250ff0b06fae38e0e25176e9c82
+PODFILE CHECKSUM: a9308f8c6b46fb476239c147e217daa1d45f1c55
 
 COCOAPODS: 1.2.0.beta.1
