@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		static let databaseStoreName = "lalamove-test"
 		static let googleAPIKey = "AIzaSyAQv15OlqBSBAaXgrH2ZEvmrcI7fgYLb4E"
+		static let backButtonTitlePositionAdjustment: CGFloat = -60.0
 	}
 
 	// MARK: - Variables
@@ -36,6 +37,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	var navigationController: UINavigationController! = {
 
 		var tempNVC = UINavigationController()
+
+		// Hide back button text
+		UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(Constants.backButtonTitlePositionAdjustment, Constants.backButtonTitlePositionAdjustment),
+		                                                                  for: UIBarMetrics.default)
+
+		let backImage = UIImage.init(named: "ic_back_arrow")
+		UIBarButtonItem.appearance().setBackButtonBackgroundImage(backImage, for: UIControlState.normal, barMetrics: UIBarMetrics.default)
 
 		return tempNVC
 	} ()
